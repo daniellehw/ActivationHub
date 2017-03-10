@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	display: none;
+}
+
+ul {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Swans</title>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/popupsheet.css">
+	
+</head>
+
+<body>
+	<header>
+		<img src="images/apnlogowhite.png" width="350px" height="100px">
+	</header>
+
+<div id="wrapper">
+	<h1>Swans Live Scoreboard</h1>	
+
+	<nav>
+			<a href="digital.html"><img src="images/digital3.jpg" width="90px" height="90px" style="margin-right: 45px;"></a>
+			<a href="index.html"><img src="images/homebutton.png" width="90px" height="90px" style="margin-right: 45px;"></a>
+
+	</nav>
+
+	<div id="slideshow">
+			<div>
+				<img src="popupimages/swans1.jpg">
+			</div>
+
+			<div>
+				<img src="popupimages/swans2.jpg">
+			</div>
+			
+			<div>
+				<img src="popupimages/swans3.jpg">
+			</div>					
+	</div>
+
+</div>
+
+<h2>Campaign Details:</h2>
+	<p>Duration: 12 weeks</p>
+	<p>Total Sites: 4</p>
+	<p>Coverage: National</p>
+
+<footer>
+
+	<div class="footer-content">
+		<input type="email" placeholder="Sign Up for more info"><button>Submit</button>
+
+	</div>
+</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+
+	console.log("hey")
+
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() { 
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		},  3000);
+	</script>
+ 
+</body>
+
+
+<html>	
